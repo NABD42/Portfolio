@@ -99,11 +99,11 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 .item {
     background: var(--main-grey);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
     border-radius: 2px;
     height: calc(100% - 6.8rem);
     width: 100%;
@@ -112,8 +112,90 @@ body {
 
 .item img {
     max-width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
+    border-radius: 2px;
 }
 
 .item h3 {
     font-weight: 300;
+    padding-top: 5px;
+}
+
+.containerSubFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--main-white);
+    background-color: var(--main-grey);
+    text-align: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.titleSubFooter > h2 {
+    font-size: 4rem;
+}
+
+.titleSubFooter p {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding-bottom: 15vh;
+}
+
+@media (max-width: 465px) {
+    .titleSubFooter > h2 {
+        display: none;
+    }
+}
+
+.containerNetwork {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 980px;
+    
+}
+
+.git:hover {
+    transform: translateY(8px)
+}
+
+.containerNetwork img {
+    width: 15%;
+}
+
+.git {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s ease-out;
+    width: 100%;
+}
+
+.git img {
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, .4);
+}
+
+.git p {
+    padding-left: 3%;
+    font-size: larger;
+    text-shadow: 3px 3px 3px var(--main-darkgrey);
+}
+
+.br {
+    height: .5vh;
+    background-color: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .4);
+}
+
+.footer{
+    display: flex;
+    height: 7vh;
+    background-color: var(--main-grey);
+    color: var(--main-white);
+    align-items: center;
+    justify-content: center;
 }
