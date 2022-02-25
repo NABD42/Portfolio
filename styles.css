@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --main-red: #DC3522;
+    --main-white: #BDC3C7;
+    --main-grey: #374140;
+    --main-darkgrey: #2A2C2B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, opens sans condensed;
+}
+
+.navbar {
+    display: flex;
+    background-color: #DC3522;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .4);
+    z-index: 10;
+    height: 6vh;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0 1rem;
+
+}
+
+.navbar li {
+    display: inline;
+
+}
+
+.navbar li:hover {
+    background: var(--main-grey);
+}
+
+.navbar a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--main-white);
+    text-decoration: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+}
+
+.containerHeadPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.containerHeadPage h1 {
+    color: var(--main-white);
+    font-size: 4rem;
+}
+
+.containerHeadPage p {
+    color: var(--main-red);
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.containerWork {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #516795;
+}
+
+.titleWork {
+    color: var(--main-white);
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: .2rem solid var(--main-white);
+}
